@@ -1,0 +1,107 @@
+08:00:11.557665 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:13.557619 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:15.557624 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:17.557664 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:19.557665 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:21.557633 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:22.350285 IP6 (hlim 1, next-header Options (0) payload length: 56) kine-tx > ff02::16: HBH (rtalert: 0x0000) (padn) [icmp6 sum ok] ICMP6, multicast listener report v2, 2 group record(s) [gaddr ff02::1:3 to_ex { }] [gaddr ff02::1:fff9:252b to_ex { }]
+08:00:22.942291 IP6 (hlim 1, next-header Options (0) payload length: 56) kine-tx > ff02::16: HBH (rtalert: 0x0000) (padn) [icmp6 sum ok] ICMP6, multicast listener report v2, 2 group record(s) [gaddr ff02::1:3 to_ex { }] [gaddr ff02::1:fff9:252b to_ex { }]
+08:00:23.557656 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:25.557686 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:27.557686 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:29.557695 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:31.339024 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has kine-tx tell kine-rx, length 28
+08:00:31.339053 ARP, Ethernet (len 6), IPv4 (len 4), Reply kine-tx is-at 52:54:00:f9:25:2b (oui Unknown), length 28
+08:00:31.557658 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:32.143298 IP (tos 0x0, ttl 1, id 587, offset 0, flags [DF], proto TCP (6), length 60)
+    kine-tx.43360 > kine-rx.hostmon: Flags [S], cksum 0x65dc (incorrect -> 0xdc9c), seq 1056786839, win 29200, options [mss 1460,sackOK,TS val 2122501698 ecr 0,nop,wscale 7], length 0
+08:00:32.143434 IP (tos 0x0, ttl 1, id 41535, offset 0, flags [DF], proto TCP (6), length 60)
+    kine-tx.43362 > kine-rx.hostmon: Flags [S], cksum 0x65dc (incorrect -> 0x06cf), seq 1954343395, win 29200, options [mss 1460,sackOK,TS val 2122501698 ecr 0,nop,wscale 7], length 0
+08:00:32.143650 IP (tos 0x0, ttl 1, id 51823, offset 0, flags [none], proto TCP (6), length 60)
+    kine-rx.hostmon > kine-tx.43360: Flags [S.], cksum 0x65dc (incorrect -> 0xc675), seq 2513028326, ack 1056786840, win 28960, options [mss 1460,sackOK,TS val 1674074253 ecr 2122501698,nop,wscale 7], length 0
+08:00:32.143682 IP (tos 0x0, ttl 1, id 588, offset 0, flags [DF], proto TCP (6), length 52)
+    kine-tx.43360 > kine-rx.hostmon: Flags [.], cksum 0x65d4 (incorrect -> 0x657d), seq 1, ack 1, win 229, options [nop,nop,TS val 2122501698 ecr 1674074253], length 0
+08:00:32.143696 IP (tos 0x0, ttl 1, id 51824, offset 0, flags [none], proto TCP (6), length 60)
+    kine-rx.hostmon > kine-tx.43362: Flags [S.], cksum 0x65dc (incorrect -> 0x60c1), seq 2144627394, ack 1954343396, win 28960, options [mss 1460,sackOK,TS val 1674074253 ecr 2122501698,nop,wscale 7], length 0
+08:00:32.143701 IP (tos 0x0, ttl 1, id 41536, offset 0, flags [DF], proto TCP (6), length 52)
+    kine-tx.43362 > kine-rx.hostmon: Flags [.], cksum 0x65d4 (incorrect -> 0xffc8), seq 1, ack 1, win 229, options [nop,nop,TS val 2122501698 ecr 1674074253], length 0
+08:00:32.143742 IP (tos 0x0, ttl 1, id 589, offset 0, flags [DF], proto TCP (6), length 99)
+    kine-tx.43360 > kine-rx.hostmon: Flags [P.], cksum 0x6603 (incorrect -> 0xdc9b), seq 1:48, ack 1, win 229, options [nop,nop,TS val 2122501698 ecr 1674074253], length 47
+08:00:32.143771 IP (tos 0x0, ttl 1, id 41537, offset 0, flags [DF], proto TCP (6), length 99)
+    kine-tx.43362 > kine-rx.hostmon: Flags [P.], cksum 0x6603 (incorrect -> 0xe963), seq 1:48, ack 1, win 229, options [nop,nop,TS val 2122501698 ecr 1674074253], length 47
+08:00:32.143830 IP (tos 0x0, ttl 1, id 51825, offset 0, flags [none], proto TCP (6), length 52)
+    kine-rx.hostmon > kine-tx.43360: Flags [.], cksum 0x65d4 (incorrect -> 0x6550), seq 1, ack 48, win 227, options [nop,nop,TS val 1674074253 ecr 2122501698], length 0
+08:00:32.143838 IP (tos 0x0, ttl 1, id 51826, offset 0, flags [none], proto TCP (6), length 52)
+    kine-rx.hostmon > kine-tx.43362: Flags [.], cksum 0x65d4 (incorrect -> 0xff9b), seq 1, ack 48, win 227, options [nop,nop,TS val 1674074253 ecr 2122501698], length 0
+08:00:32.144324 IP (tos 0x0, ttl 1, id 51827, offset 0, flags [none], proto TCP (6), length 120)
+    kine-rx.hostmon > kine-tx.43360: Flags [P.], cksum 0x6618 (incorrect -> 0x9c3a), seq 1:69, ack 48, win 227, options [nop,nop,TS val 1674074253 ecr 2122501698], length 68
+08:00:32.144336 IP (tos 0x0, ttl 1, id 590, offset 0, flags [DF], proto TCP (6), length 52)
+    kine-tx.43360 > kine-rx.hostmon: Flags [.], cksum 0x65d4 (incorrect -> 0x650a), seq 48, ack 69, win 229, options [nop,nop,TS val 2122501698 ecr 1674074253], length 0
+08:00:32.144359 IP (tos 0x0, ttl 1, id 51828, offset 0, flags [none], proto TCP (6), length 52)
+    kine-rx.hostmon > kine-tx.43360: Flags [F.], cksum 0x65d4 (incorrect -> 0x650b), seq 69, ack 48, win 227, options [nop,nop,TS val 1674074253 ecr 2122501698], length 0
+08:00:32.144367 IP (tos 0x0, ttl 1, id 51829, offset 0, flags [none], proto TCP (6), length 120)
+    kine-rx.hostmon > kine-tx.43362: Flags [P.], cksum 0x6618 (incorrect -> 0xa902), seq 1:69, ack 48, win 227, options [nop,nop,TS val 1674074253 ecr 2122501698], length 68
+08:00:32.144370 IP (tos 0x0, ttl 1, id 41538, offset 0, flags [DF], proto TCP (6), length 52)
+    kine-tx.43362 > kine-rx.hostmon: Flags [.], cksum 0x65d4 (incorrect -> 0xff55), seq 48, ack 69, win 229, options [nop,nop,TS val 2122501698 ecr 1674074253], length 0
+08:00:32.144382 IP (tos 0x0, ttl 1, id 51830, offset 0, flags [none], proto TCP (6), length 52)
+    kine-rx.hostmon > kine-tx.43362: Flags [F.], cksum 0x65d4 (incorrect -> 0xff56), seq 69, ack 48, win 227, options [nop,nop,TS val 1674074253 ecr 2122501698], length 0
+08:00:32.144435 IP (tos 0x0, ttl 1, id 591, offset 0, flags [DF], proto TCP (6), length 52)
+    kine-tx.43360 > kine-rx.hostmon: Flags [F.], cksum 0x65d4 (incorrect -> 0x6508), seq 48, ack 70, win 229, options [nop,nop,TS val 2122501698 ecr 1674074253], length 0
+08:00:32.144504 IP (tos 0x0, ttl 1, id 51831, offset 0, flags [none], proto TCP (6), length 52)
+    kine-rx.hostmon > kine-tx.43360: Flags [.], cksum 0x65d4 (incorrect -> 0x650a), seq 70, ack 49, win 227, options [nop,nop,TS val 1674074253 ecr 2122501698], length 0
+08:00:32.144550 IP (tos 0x0, ttl 1, id 41539, offset 0, flags [DF], proto TCP (6), length 52)
+    kine-tx.43362 > kine-rx.hostmon: Flags [R.], cksum 0x65d4 (incorrect -> 0xff50), seq 48, ack 70, win 229, options [nop,nop,TS val 2122501698 ecr 1674074253], length 0
+08:00:33.557735 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:35.557722 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:37.150258 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has kine-rx tell kine-tx, length 28
+08:00:37.150532 ARP, Ethernet (len 6), IPv4 (len 4), Reply kine-rx is-at 52:54:00:53:c2:a3 (oui Unknown), length 28
+08:00:37.557741 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:39.557728 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:41.557762 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:43.557667 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:45.557728 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:47.557720 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:48.990222 IP6 (hlim 1, next-header Options (0) payload length: 56) kine-tx > ff02::16: HBH (rtalert: 0x0000) (padn) [icmp6 sum ok] ICMP6, multicast listener report v2, 2 group record(s) [gaddr ff02::1:3 to_ex { }] [gaddr ff02::1:fff9:252b to_ex { }]
+08:00:49.557744 STP 802.1d, Config, Flags [none], bridge-id 8000.2c:53:4a:01:8c:96.8002, length 35
+	message-age 0.00s, max-age 20.00s, hello-time 2.00s, forwarding-delay 15.00s
+	root-id 8000.2c:53:4a:01:8c:96, root-pathcost 0
+08:00:49.982296 IP6 (hlim 1, next-header Options (0) payload length: 56) kine-tx > ff02::16: HBH (rtalert: 0x0000) (padn) [icmp6 sum ok] ICMP6, multicast listener report v2, 2 group record(s) [gaddr ff02::1:3 to_ex { }] [gaddr ff02::1:fff9:252b to_ex { }]
+
