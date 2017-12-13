@@ -84,10 +84,57 @@ protocol:{7}
         return out
 
 
+class GRE_BASE_HDR(ct.Structure):
+    _fields_ = [
+        ("flags", ct.c_ubyte * 2),
+        ("protocol", ct.c_ubyte * 2)
+    ]
+
+class GRE_Header:
+    def __init__(self, grehdr):
+        self.grehdr = grehdr
+    def ub2hex(self, cb):
+        "similarly htons"
+        return " ".join(map(lambda x:"{:0>2X}".format(x),cb))
+    def has_checksum(self):
+        return self.grehdr.flags & 0x8000 > 0
+    def has_key(self):
+        return self.grehdr.flags & 0x2000 > 0
+    def has_sequence_num(self):
+        return self.grehdr.flags & 0x1000 > 0
+    def version(self):
+        return self.grehdr.flags & 0x0007
+
+    def __str__(self):
+        grehdr = self.grehdr
+        has_checksum = "1(has checksum)" if self.has_checksum() else "0(hasn't checksum)"
+        has_key = "1(has key)" if self.has_key() else "0(hasn't key)"
+        has_sequence = "1(has sequence)" if self.has_sequence_num() else "0(hasn't sequence)"
+        version = self.version()
+        protocol = self.ub2hex(grehdr.protocol)
+        out = """\
+GRE Header
+About optional sequence:
+\tchecksum:\t{0}
+\tkey:\t{1}
+\tsequence:\t{2}
+version:\t{3}
+protocol:\t{4}
+""".format(has_checksum,has_key,has_sequence,version,protocol)
+        return out
+
 
 class HEADERS(ct.Structure):
     _fields_ = [
         ("ethhdr", ETHHDR),
+        ("iphdr", IPHDR)
+    ]
+
+class HEADERS_with_GRE(ct.Structure):
+    _fields_ = [
+        ("ethhdr", ETHHDR),
+        ("iphdr", IPHDR),
+        ("grehdr", GRE_BASE_HDR),
         ("iphdr", IPHDR)
     ]
 
@@ -100,6 +147,7 @@ class Event:
 
     def __str__(self):
         return str(self.eth) + str(self.iph)
+
 
 
 

@@ -6,6 +6,7 @@
 #include <linux/if_vlan.h>
 #include <linux/ip.h>
 #include <linux/ipv6.h>
+#include <net/gre.h>
 
 BPF_TABLE("prog",int, int, prog_array, 8);
 BPF_PERF_OUTPUT(events);
@@ -71,6 +72,8 @@ static __always_inline int dump_packet(struct xdp_md *ctx)
   return XDP_PASS;
 }
 
+//##########################################
+//SWAP MODE
 static __always_inline void copy_ethhdr(struct ethhdr *new_eth,
                                         const struct ethhdr *old_eth) {
   memcpy(new_eth->h_source, old_eth->h_source, sizeof(new_eth->h_source));
@@ -85,11 +88,12 @@ int process(struct xdp_md *ctx)
   if(eth + 1 > data_end) return XDP_DROP;
   struct iphdr* iph = data + sizeof(struct ethhdr);
   if(iph + 1 > data_end) return XDP_DROP;
-  if(iph->protocol == 0xDC) {
-    struct ethhdr* new_eth = (void*) &(iph->frag_off);//it works!!
+  //if next hdr is GRE
+  if(iph->protocol == 47) {
+    struct ethhdr* new_eth = data + sizeof(struct iphdr) + sizeof(struct gre_base_hdr);
     if(new_eth + 1 > data_end) return XDP_DROP;
     copy_ethhdr(new_eth, eth);
-    if(bpf_xdp_adjust_head(ctx,(int) sizeof(struct iphdr)))
+    if(bpf_xdp_adjust_head(ctx,(int) sizeof(struct iphdr) + sizeof(struct gre_base_hdr)))
       return XDP_DROP;
   }
   prog_array.call(ctx, (int) POST_DUMP);
