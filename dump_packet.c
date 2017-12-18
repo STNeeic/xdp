@@ -80,7 +80,8 @@ static __always_inline void copy_ethhdr(struct ethhdr *new_eth,
   memcpy(new_eth->h_dest, old_eth->h_dest, sizeof(new_eth->h_dest));
   new_eth->h_proto = old_eth->h_proto;
 }
-int process(struct xdp_md *ctx)
+
+static inline int __process(struct xdp_md *ctx)
 {
   void* data = (void*)(long) ctx->data;
   void* data_end = (void*)(long) ctx->data_end;
@@ -96,9 +97,22 @@ int process(struct xdp_md *ctx)
     if(bpf_xdp_adjust_head(ctx,(int) sizeof(struct iphdr) + sizeof(struct gre_base_hdr)))
       return XDP_DROP;
   }
-  prog_array.call(ctx, (int) POST_DUMP);
   return XDP_PASS;
 }
+
+
+int process_then_jump(struct xdp_md *ctx){
+  int ret = __process(ctx);
+  if(ret == XDP_PASS) {
+    prog_array.call(ctx, (int) POST_DUMP);
+  }
+  return XDP_DROP;
+}
+
+int process(struct xdp_md *ctx){
+  return __process(ctx);
+}
+
 
 int pre_dump_packet(struct xdp_md *ctx)
 {

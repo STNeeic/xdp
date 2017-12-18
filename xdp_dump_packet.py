@@ -172,7 +172,7 @@ events.open_perf_buffer(print_event)
 
 prog_entry = bpf.load_func("prog_entry", BPF.XDP)
 pre_dump_packet = bpf.load_func("pre_dump_packet", BPF.XDP)
-process = bpf.load_func("process", BPF.XDP)
+process = bpf.load_func("process_then_jump", BPF.XDP)
 post_dump_packet = bpf.load_func("post_dump_packet", BPF.XDP)
 
 
