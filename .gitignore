@@ -1,3 +1,6 @@
 /networking/
 /**/*.swp
 a.out
+*.out
+*.dat
+*.pcap
